@@ -1,0 +1,64 @@
+<div class="modal-dialog">
+    <div class="modal-content" id="modal-basic-title">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Preview</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          (click)="closeModal()"
+        ></button>
+      </div>
+      <div class="modal-body" id="pdfTable" #pdfTable>
+        <div class="d-flex header">
+            <div class="left"></div>
+            <img src="./../../assets/sg-horizontal.svg" />
+            <div class="right"></div>
+        </div>
+  
+        <div class="mt-5">
+          <p class="name-input">Name: {{ formData.name }}</p>
+        </div>
+        <div class="d-flex justify-content-between mt-2">
+          <p class="name-input">Rec. No.: {{ formData.receiptNo }}</p>
+          <p class="name-input">Date: {{ formData.date | date }}</p>
+        </div>
+        
+  
+        <div class="table-header d-flex justify-content-around">
+          
+      </div>
+        <table class="w-100">
+          <thead class="table-header">
+            <th class="">Sr.No.</th>
+            <th class="">Month</th>
+            <th class="">Amount</th>
+          </thead>
+          <tbody>
+              <tr *ngFor="let months of formData.monthList; let i=index">
+                  <td>{{i+1}}</td>
+                  <td>{{months.month}}</td>
+                  <td>{{months.amount}}</td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-between mt-4">
+          <div>
+              <p class="terms">Terms & Condition :</p>
+              <p class="conditions">This receipt only use for your 
+                  payment proof.</p>
+          </div>
+          <div class="total-background"><span class="total-text">Total:{{totalAmount}}</span></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" (click)="exportPdf(formData)">Export</button>
+      </div>
+    </div>
+  </div>
+
+<!-- <a href="https://api.whatsapp.com/send?phone=7575044866&text=Hi, this is a test" target="_blank">Send by WhatsApp</a> -->

@@ -1,0 +1,138 @@
+.modal-body {
+  margin-bottom: 40px;
+  background-color: white !important;
+}
+
+.modal-dialog{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header {
+  margin-bottom: 70px !important;
+}
+
+.right {
+  position: absolute;
+  right: 1rem;
+  width: 50px;
+  height: 35px;
+  background: #0e9dd9;
+  mix-blend-mode: normal;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.left {
+  position: absolute;
+  left: 1rem;
+  width: 50px;
+  height: 35px;
+  background: #0e9dd9;
+  mix-blend-mode: normal;
+  border-radius: 0px 5px 5px 0px;
+}
+
+img {
+  width: 240px !important;
+  height: 60px;
+  left: calc(50% - 240px / 2 - 2px);
+  top: 10px;
+  position: absolute;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.table-header {
+  border-collapse: collapse;
+  background: #ef4e23;
+  color: white;
+  border-right: solid 3px #ef4e23;
+  border-left: solid 3px #ef4e23;
+  text-align: center;
+}
+
+th {
+  padding: 10px;
+}
+.table-data {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+table {
+  tr {
+    border: none;
+    td {
+      border-right: solid 3px #ef4e23;
+      border-left: solid 3px #ef4e23;
+      text-align: center;
+    }
+  }
+  border-collapse: collapse !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-bottom: solid 3px #ef4e23;
+  min-height: 120px;
+}
+
+.terms {
+  font-family: "Spectral";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.conditions {
+  width: 159px;
+  height: 30px;
+  left: 11px;
+  top: 680px;
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.total-background {
+  width: 110px;
+  height: 35px;
+  right: 0px;
+  top: 657px;
+  background: #0e9dd9;
+  mix-blend-mode: normal;
+  border-radius: 5px 0px 0px 5px;
+  .total-text {
+    width: 43px;
+    height: 23px;
+    left: 225px;
+    top: 663px;
+    font-family: "Spectral";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 13px;
+    padding-left: 11px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 180px !important;
+    height: 60px;
+    left: calc(50% - 240px / 2 + 25px);
+    top: 10px;
+    position: absolute;
+  }
+}

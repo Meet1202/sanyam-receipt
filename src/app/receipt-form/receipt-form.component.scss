@@ -1,0 +1,19 @@
+.btn-danger{
+    height: 60px;
+}
+
+.indexes {
+    font-size: larger;
+    margin-top: 13px;
+    margin-right: 8px;
+}
+
+.title{
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainform{
+        width: 700px;
+    }
+  }
